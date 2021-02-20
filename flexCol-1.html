@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS flex columns</title>
+
+    <style>
+      body {
+        display: flex; 
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .container1,
+      .container2,
+      .container3,
+      .container4,
+      .container5,
+      .container6,
+      .container7,
+      .container8 {
+        display: flex;
+        flex-direction: column;
+        border: 2px solid grey;
+        padding: 20px;
+        height: 50vh; 
+      }
+      .container1 {
+        justify-content: flex-start;
+      }
+      .container2 {
+        justify-content: flex-end;
+      }
+      .container3 {
+        justify-content: center;
+      }
+      .container4 {
+        justify-content: space-between;
+      }
+      .container5 {
+        justify-content: space-around;
+      }
+      .container6 {
+        justify-content: space-around;
+      }
+      .container7 {
+        justify-content: stretch;
+      }
+      .container8 {
+        justify-content: space-evenly;
+      }
+      .box {
+        padding: 20px 20px;
+        border: 1px solid #000;
+        background-color: rgb(55, 143, 202);
+      }
+      .box7 {
+        flex-grow: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container1">
+      <div class="box">A</div>
+      <div class="box">B</div>
+      <div class="box">C</div>
+    </div>
+    <div class="container2">
+      <div class="box">A</div>
+      <div class="box">B</div>
+      <div class="box">C</div>
+    </div>
+    <div class="container3">
+      <div class="box">A</div>
+      <div class="box">B</div>
+      <div class="box">C</div>
+    </div>
+    <div class="container4">
+      <div class="box">A</div>
+      <div class="box">B</div>
+      <div class="box">C</div>
+    </div>
+    <div class="container5">
+      <div class="box">A</div>
+      <div class="box">B</div>
+      <div class="box">C</div>
+    </div>
+    <div class="container6">
+      <div class="box">A</div>
+      <div class="box">B</div>
+      <div class="box">C</div>
+    </div>
+    <div class="container7">
+      <div class="box box7">A</div>
+      <div class="box box7">B</div>
+      <div class="box box7">C</div>
+    </div>
+    <div class="container8">
+      <div class="box">A</div>
+      <div class="box">B</div>
+      <div class="box">C</div>
+    </div>
+  </body>
+</html>

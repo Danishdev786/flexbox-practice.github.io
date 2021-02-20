@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex ex-3</title>
+
+    <style>
+     body {
+       display: flex; 
+     }
+      .container1,
+      .container2,
+      .container3,
+      .container4,
+      .container5,
+      .container6,
+      .container7 { 
+        height: 80vh;
+        padding: 20px;
+        border: 1px solid grey;
+        display: flex;
+        flex-direction: row !important;
+        flex-wrap: wrap;
+
+      }
+      .container1 {
+        align-content: flex-start;
+      }
+      .container2 {
+        align-content: flex-end;
+      }
+      .container3 {
+        align-content: center;
+      }
+      .container4 {
+        align-content: space-between;
+      }
+      .container5 {
+        align-content: space-around;
+      }
+      .container6 {
+        align-content: space-evenly;
+      }
+      .container7 {
+        align-content: stretch;
+      }
+      .box {
+        padding: 10px 20px;
+        background-color: cornflowerblue;
+        border: 1px solid red;
+        margin: 2px; 
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container1">
+      <div class="box">A</div>
+      <div class="box">B</div>
+      <div class="box">C</div>
+      <div class="box">D</div>
+      <div class="box">E</div>
+      <div class="box">F</div>
+      <div class="box">G</div>
+    </div>
+    <div class="container2">
+      <div class="box">A</div>
+      <div class="box">B</div>
+      <div class="box">C</div>
+      <div class="box">D</div>
+      <div class="box">E</div>
+      <div class="box">F</div>
+      <div class="box">G</div>
+    </div>
+    <div class="container3">
+      <div class="box">A</div>
+      <div class="box">B</div>
+      <div class="box">C</div>
+      <div class="box">D</div>
+      <div class="box">E</div>
+      <div class="box">F</div>
+      <div class="box">G</div>
+    </div>
+    <div class="container4">
+      <div class="box">A</div>
+      <div class="box">B</div>
+      <div class="box">C</div>
+      <div class="box">D</div>
+      <div class="box">E</div>
+      <div class="box">F</div>
+      <div class="box">G</div>
+    </div>
+    <div class="container5">
+      <div class="box">A</div>
+      <div class="box">B</div>
+      <div class="box">C</div>
+      <div class="box">D</div>
+      <div class="box">E</div>
+      <div class="box">F</div>
+      <div class="box">G</div>
+    </div>
+    <div class="container6">
+      <div class="box">A</div>
+      <div class="box">B</div>
+      <div class="box">C</div>
+      <div class="box">D</div>
+      <div class="box">E</div>
+      <div class="box">F</div>
+      <div class="box">G</div>
+    </div>
+    <div class="container7">
+      <div class="box">A</div>
+      <div class="box">B</div>
+      <div class="box">C</div>
+      <div class="box">D</div>
+      <div class="box">E</div>
+      <div class="box">F</div>
+      <div class="box">G</div>
+    </div>
+  </body>
+</html>

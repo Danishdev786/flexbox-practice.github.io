@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex</title>
+    <style>
+       .container1,
+      .container2,
+      .container3,
+      .container4,
+      .container5,.container6 {
+        padding: 10px;
+        border: 1px solid grey;
+        display: flex;
+        height: 10vh; 
+        justify-content: center;
+      }
+      .container1 { align-items: flex-start;}
+      .container2 { align-items: flex-end;}
+      .container3 { align-items: center;}
+      .container4 { align-items: stretch;}
+      .container5 { align-items: stretch;}
+      .container6 { align-items: baseline;}
+      
+     
+      .box {
+        border: 1px solid rgb(58, 58, 58);
+        padding: 20px;
+        background-color: cadetblue;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container1">
+      <div class="box">a</div>
+      <div class="box">b</div>
+      <div class="box">c</div>
+      <div class="box">d</div>
+      <div class="box">e</div>
+    </div>
+
+    <div class="container2">
+      <div class="box">a</div>
+      <div class="box">b</div>
+      <div class="box">c</div>
+      <div class="box">d</div>
+      <div class="box">e</div>
+    </div>
+
+    <div class="container3">
+      <div class="box">a</div>
+      <div class="box">b</div>
+      <div class="box">c</div>
+      <div class="box">d</div>
+      <div class="box">e</div>
+    </div>
+
+    <div class="container4">
+      <div class="box">a</div>
+      <div class="box">b</div>
+      <div class="box">c</div>
+      <div class="box">d</div>
+      <div class="box">e</div>
+    </div>
+
+    <div class="container5">
+      <div class="box">a</div>
+      <div class="box">b</div>
+      <div class="box">c</div>
+      <div class="box">d</div>
+      <div class="box">e</div>
+    </div>
+    <div class="container6">
+        <div class="box">a</div>
+        <div class="box" style='height: 50px;'>Any Text</div>
+        <div class="box">c</div>
+        <div class="box">d</div>
+        <div class="box">e</div>
+      </div>
+  </body>
+</html>
